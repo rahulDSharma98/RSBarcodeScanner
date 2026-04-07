@@ -36,5 +36,6 @@ jobs:
           -project Examples/RSBarcodeScannerDemo/RSBarcodeScannerDemo.xcodeproj \
           -scheme RSBarcodeScannerDemo \
           -destination 'generic/platform=iOS' \
-          CODE_SIGNING_ALLOWED=NO 
+          CODE_SIGNING_ALLOWED=NO \
+          CODE_SIGNING_REQUIRED=NO \
           clean build
