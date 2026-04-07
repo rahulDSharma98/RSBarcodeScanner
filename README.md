@@ -36,7 +36,6 @@ present(scanner, animated: true)
 ## ⚙️ Configuration
 ```swift
 var config = ScannerConfiguration()
-
 config.isFlashEnabled = true
 
 let scanner = BarcodeScannerViewController(configuration: config)
@@ -85,9 +84,8 @@ Add to your Info.plist:
 ---
 
 ## 🧱 Requirements
-iOS 13+
+iOS 13.0+
 Swift 5.7+
-
 ---
 
 ## 📄 License
