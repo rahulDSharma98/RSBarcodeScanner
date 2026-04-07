@@ -85,6 +85,7 @@ Add to your Info.plist:
 
 ## 🧱 Requirements
 iOS v13.0+
+
 Swift v5.7+
 
 ---
