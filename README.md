@@ -84,8 +84,9 @@ Add to your Info.plist:
 ---
 
 ## 🧱 Requirements
-iOS 13.0+
-Swift 5.7+
+iOS v13.0+
+Swift v5.7+
+
 ---
 
 ## 📄 License
