@@ -44,7 +44,7 @@ let scanner = BarcodeScannerViewController(configuration: config)
 
 ---
 
-##🔦 Torch Control
+## 🔦 Torch Control
 ```swift
 scanner.toggleTorch()
 scanner.setTorch(enabled: true)
@@ -52,7 +52,7 @@ scanner.setTorch(enabled: true)
 
 ---
 
-##🔍 Zoom Control
+## 🔍 Zoom Control
 ```swift
 scanner.setZoom(level: 2.0)
 scanner.setZoomSmooth(to: 3.0)
@@ -60,14 +60,14 @@ scanner.setZoomSmooth(to: 3.0)
 
 ---
 
-##📐 Scan Area
+## 📐 Scan Area
 ```swift
 scanner.setScanArea(CGRect(x: 100, y: 200, width: 200, height: 200))
 ```
 
 ---
 
-##📱 Demo App
+## 📱 Demo App
 A working demo is included in:
 ```
 Examples/RSBarcodeScannerDemo
@@ -75,7 +75,7 @@ Examples/RSBarcodeScannerDemo
 
 ---
 
-##🔐 Permissions
+## 🔐 Permissions
 Add to your Info.plist:
 ```swift
 <key>NSCameraUsageDescription</key>
@@ -84,11 +84,11 @@ Add to your Info.plist:
 
 ---
 
-##🧱 Requirements
+## 🧱 Requirements
 iOS 13+
 Swift 5.7+
 
 ---
 
-##📄 License
+## 📄 License
 MIT License
