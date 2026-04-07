@@ -1,0 +1,41 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Resolve Swift Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies
+
+      # ✅ Build SDK (SPM)
+      - name: Build RSBarcodeScanner Package
+        run: |
+          xcodebuild \
+          -scheme RSBarcodeScanner \
+          -destination 'generic/platform=iOS' \
+          clean build
+
+      # ✅ Build Demo App
+      - name: Build Demo App
+        run: |
+          xcodebuild \
+          -project Examples/RSBarcodeScannerDemo/RSBarcodeScannerDemo.xcodeproj \
+          -scheme RSBarcodeScannerDemo \
+          -destination 'generic/platform=iOS' \
+          CODE_SIGNING_ALLOWED=NO \
+          CODE_SIGNING_REQUIRED=NO \
+          clean build
