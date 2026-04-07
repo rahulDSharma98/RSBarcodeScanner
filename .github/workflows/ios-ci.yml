@@ -7,9 +7,10 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  ios-build:
+    name: iOS Build
     runs-on: macos-latest
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
