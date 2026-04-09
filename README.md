@@ -91,4 +91,4 @@ Swift v5.7+
 ---
 
 ## 📄 License
-MIT License
+RSBarcodeScanner is available under the MIT license. See the LICENSE file for more info.
